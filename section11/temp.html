@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header {
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #232323;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            height: 100%;
+            width: 200px;
+            text-align: center;
+            line-height: 100px;
+            background-color: yellow;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rosybrown;
+        }
+
+        .header-nav-inner {
+            display: flex;
+            background-color: yellow;
+        }
+
+        .header-nav-inner:last-child {
+            background-color: orange;
+        }
+
+        .header-nav-inner > li {
+            padding: 4px 8px;
+        }
+
+        main {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            gap: 16px;
+        }
+
+        section {
+            width: 70%;
+        }
+        article {
+            border: 1px solid #232323;
+            margin-bottom: 16px;
+            /* margin-right: 16px; */
+            padding: 16px;
+            
+        }
+
+        article > h2 {
+            background-color: antiquewhite;
+            margin-bottom: 8px;
+        }
+
+        .article-text {
+            line-height: 200%;
+        }
+
+        aside{
+            border: 1px solid #232323;
+            padding: 16px;
+            width: 30%;
+            height: fit-content;
+        }
+
+        .aside-footer {
+            background-color: gray;
+            height: 80px;
+        }
+
+        aside > p {
+            margin-bottom: 8px;
+        }
+
+        .aside-input-container {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #232323;
+            padding: 16px;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WEB-logo</h1>
+        <nav>
+            <ul class="header-nav-inner">
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+            </ul>
+            <ul class="header-nav-inner">
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Main atricle</h2>
+                <p class="article-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sunt fugit reiciendis ut, eveniet possimus dolore ullam quae sint dolorum quasi, voluptatibus, eius necessitatibus esse harum vitae est pariatur maiores.
+                </p>
+            </article>
+            <article>
+                <h2>Main atricle</h2>
+                <p class="article-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sunt fugit reiciendis ut, eveniet possimus dolore ullam quae sint dolorum quasi, voluptatibus, eius necessitatibus esse harum vitae est pariatur maiores.
+                </p>
+            </article>
+            <article>
+                <h2>Main atricle</h2>
+                <p class="article-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis sunt fugit reiciendis ut, eveniet possimus dolore ullam quae sint dolorum quasi, voluptatibus, eius necessitatibus esse harum vitae est pariatur maiores.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <h2>Right aside</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ipsam perferendis quidem sit sunt accusantium ducimus id illum omnis inventore obcaecati corporis animi quasi laborum vitae deleniti molestias mollitia tempore.</p>
+            <div class="aside-input-container">
+                <input type="text" name="" id="">
+                <button>mainto</button>
+            </div>
+            <div class="aside-footer">
+                <h3>TEXT</h3>
+                <p>banner</p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>HTML5 &copy;COPYRIGHT</p>
+    </footer>
+</body>
+</html>

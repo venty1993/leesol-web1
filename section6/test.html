@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+        }
+        div {
+            border: 1px solid black;
+            width: 100%;
+            height: 500px;
+        }
+        .inner {
+            height: 250px;
+        }
+
+        .inner > div {
+            float: left;
+            height: 125px;
+            width: 50%;
+        }
+
+        .harf {
+            width: 40%;
+            float: left;
+        }
+        main {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <div class="margin-top">
+            <div class="inner">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div></div>
+        <figure>
+            <img src="../section4/img/처갓집.png" alt="">
+        </figure>
+    </main>
+
+</body>
+</html>

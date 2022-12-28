@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        .next {
+            color: brown;
+        }
+
+        .next::after {
+            content: '';
+            display: inline-block;
+            width: 0.5em;
+            height: 0.5em;
+            border: 1px solid black;
+            border-left: none;
+            border-bottom: none;
+            transform: rotate(45deg);
+        }
+
+        .ks {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+            border-left: none;
+            border-bottom: none;
+            transform: rotate(45deg);
+        }
+
+        .big {
+            font-size: 24px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <a href="" class="next big">
+        
+        더 알아보기
+    </a>
+
+    <br>
+    <a href="" class="next">어서오세요</a>
+
+    <br>
+    <a href="#" class="next">새로운것</a>
+    <!-- <div class="ks"> </div> -->
+</body>
+</html>

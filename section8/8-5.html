@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .contents1 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+
+        .contents2 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+
+        .contents3 {
+            width: 200px;
+            /* height: 200px; */
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+            
+            /* overflow: hidden; */
+        }
+        .contents4 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="contents1">
+        <h4>콘텐츠 양이 일정할때</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam culpa consequuntur optio unde quidem aliquam nihil explicabo, blanditiis magnam nam sint at laboriosam doloremque</p>
+    </div>
+    <div class="contents2">
+        <h4>콘텐츠의 양이 많거나 유동적일때 흘러넘침</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sint obcaecati, perspiciatis sit tempora ullam dolores magni, reprehenderit molestiae, minima similique beatae vero odit excepturi voluptate id laudantium ipsam expedita.</p>
+    </div>
+    <div class="contents3">
+        <h4>콘텐츠의 양에 따라 높이가 늘어남</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet consequatur excepturi suscipit explicabo perspiciatis quod fugiat vero quisquam vitae illo! Perspiciatis facere veniam quo minima nisi unde, qui rem eius!</p>
+    </div>
+    <div class="contents4">
+        <h4>박스에 지정된 높이만큼만 콘텐츠가 보임</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet consequatur excepturi suscipit explicabo perspiciatis quod fugiat vero quisquam vitae illo! Perspiciatis facere veniam quo minima nisi unde, qui rem eius!</p>
+    </div>
+
+    <!-- div.contents$*4>h4+p -->
+</body>
+</html>
