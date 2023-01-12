@@ -42,3 +42,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+button {
+	/* 기본속성 제거하면 사용하는데 불편하진 않다. */
+}

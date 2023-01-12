@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            max-width: 1200px;
+            /* border: 1px solid #222; */
+            /* box-sizing: border-box; */
+            margin: 0 auto;
+        }
+        
+        @media screen and (max-width:1366px){
+            section {
+                padding: 0 32px;
+            }
+        }
+        @media screen and (max-width:834px){
+            section {
+                padding: 0 20px;
+            }
+            
+        }
+        ul {
+            border: 1px solid #222;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        li {
+            border: 1px solid red;
+            width: 290px;
+            height: 300px;
+            box-sizing: border-box;
+            list-style: none;
+        }   
+
+        .bad {
+            position: absolute;
+        }
+        .bad:nth-child(1) {
+            left: 0;
+        }
+        .bad:nth-child(2) {
+            left: 300px;
+        }
+        .bad:nth-child(3) {
+            left: 600px
+        }
+        .bad:nth-child(4) {
+            left: 900px;
+        }
+    </style>
+    
+</head>
+<body>
+    <section>
+        <ul>
+            <li class="good">1</li>
+            <li class="good">2</li>
+            <li class="good">3</li>
+            <li class="good">4</li>
+
+        </ul>
+    </section>
+    
+    <section>
+        <ul style="position: relative;">
+            <li class="bad">1</li>
+            <li class="bad">2</li>
+            <li class="bad">3</li>
+            <li class="bad">4</li>
+
+        </ul>
+
+    </section>
+</body>
+</html>
